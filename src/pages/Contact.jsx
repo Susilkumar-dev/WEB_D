@@ -15,23 +15,21 @@ const Contact = () => {
 
   // Team leader info with photo
   const teamLeader = {
-    name: 'Alex Johnson',
+    name: 'Raju Susil',
     role: 'Lead Developer & Instructor',
-    bio: 'Full-stack developer with 8+ years of experience. Passionate about teaching and creating exceptional learning experiences.',
-    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-    email: 'alex@devroadmap.com',
-    phone: '+1 (555) 123-4567',
-    location: 'San Francisco, CA',
+    bio: 'Full-stack developer with 1+ years of experience. Passionate about teaching and creating exceptional learning experiences.',
+    photo: 'https://res.cloudinary.com/dfezx6a5k/image/upload/v1767985989/WhatsApp_Image_2026-01-10_at_12.41.01_AM_fgc8gs.jpg',
+    email: 'rajususil9@gmail.com',
+    phone: '+91 7304259116',
+    location: 'bhubaneswar',
     social: {
-      linkedin: 'https://linkedin.com/in/alexjohnson',
-      github: 'https://github.com/alexjohnson',
+      linkedin: 'https://linkedin.com/in/rajususil',
+      github: 'https://github.com/susilkumar-dev',
       twitter: 'https://twitter.com/alexj_dev'
     },
     achievements: [
       '10+ Open Source Projects',
-      '5+ Years Teaching Experience',
-      '1000+ Students Taught',
-      'AWS Certified Developer'
+      
     ]
   }
 
@@ -180,7 +178,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-6 py-4 rounded-2xl glass-effect focus:ring-4 focus:ring-primary-500/30 focus:border-transparent"
-                      placeholder="John Doe"
+                      placeholder=""
                     />
                   </div>
                   <div>
@@ -195,7 +193,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-6 py-4 rounded-2xl glass-effect focus:ring-4 focus:ring-primary-500/30 focus:border-transparent"
-                      placeholder="john@example.com"
+                      placeholder=""
                     />
                   </div>
                 </div>
