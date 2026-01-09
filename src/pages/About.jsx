@@ -1,49 +1,24 @@
-// frontend/src/pages/About.jsx - UPDATED
-import { Users, Target, Zap, BookOpen, Globe, Award, Heart, Code2 } from 'lucide-react'
+// frontend/src/pages/About.jsx
+import { Target, Zap, BookOpen, Code2, Globe, Sparkles } from 'lucide-react'
 
 const About = () => {
-  const team = [
-    { 
-      name: 'Alex Johnson', 
-      role: 'Lead Developer & Instructor', 
-      bio: 'Full-stack developer with 8+ years experience',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
-    },
-    { 
-      name: 'Sarah Williams', 
-      role: 'UI/UX Designer', 
-      bio: 'Specialized in creating beautiful learning interfaces',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
-    },
-    { 
-      name: 'Mike Chen', 
-      role: 'Content Creator', 
-      bio: 'Creates engaging educational content',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
-    },
-    { 
-      name: 'Emma Davis', 
-      role: 'Community Manager', 
-      bio: 'Builds and supports our learning community',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
-    },
-  ]
+  // Team data removed as requested
 
   const values = [
     {
       icon: <Target className="h-8 w-8" />,
-      title: 'Our Mission',
-      description: 'Make web development education accessible and effective for everyone.'
+      title: 'Structured Learning',
+      description: 'A clear, defined path to master modern web technologies in 2026.'
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: 'Our Vision',
-      description: 'Become the leading platform for structured web development learning.'
+      title: 'Current Technology',
+      description: 'Up-to-date resources covering the latest frameworks and AI tools.'
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
-      title: 'Our Approach',
-      description: 'Combine theory with hands-on practice through interactive examples.'
+      title: 'Academic Approach',
+      description: 'Focusing on core concepts, theory, and practical application.'
     }
   ]
 
@@ -53,48 +28,49 @@ const About = () => {
       <section className="py-12">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold mb-6">
-            About <span className="gradient-text">DevRoadmap</span>
+            About The <span className="gradient-text">Project</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
-            We're passionate about making web development education accessible, 
-            interactive, and effective for learners worldwide.
+            A comprehensive study resource designed to navigate the complexities 
+            of the 2026 web development landscape.
           </p>
         </div>
       </section>
 
-      {/* Story */}
+      {/* Project Story / Context */}
       <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="glass-card p-12">
             <div className="flex items-center mb-8">
               <Code2 className="h-10 w-10 text-primary-600 dark:text-primary-400 mr-4" />
-              <h2 className="text-3xl font-bold">Our Story</h2>
+              <h2 className="text-3xl font-bold">Project Background</h2>
             </div>
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="mb-6">
-                DevRoadmap was founded in 2023 by a team of passionate developers and educators 
-                who noticed a gap in web development education. Many learners struggled with 
-                unstructured resources and overwhelming amounts of information.
+                Welcome to DevRoadmap 2026. This platform was developed as an educational 
+                project to address the growing complexity of becoming a full-stack developer. 
+                With the rapid evolution of AI-assisted coding, server components, and edge 
+                computing, the barrier to entry for new students has never been higher.
               </p>
               <p className="mb-6">
-                Our mission is simple: provide clear, structured paths for learning web development. 
-                We break down complex topics into digestible chunks, provide interactive examples, 
-                and guide learners from beginner to advanced levels.
+                This project serves as a digital study guide, organizing scattered information 
+                into a coherent curriculum. It focuses purely on the technical roadmap required 
+                to build scalable applications in the current year.
               </p>
               <p>
-                Today, thousands of developers use DevRoadmap to accelerate their learning journey. 
-                We continue to grow and improve, driven by our community's feedback and the 
-                ever-evolving web development landscape.
+                Whether for academic research, self-study, or final year project reference, 
+                DevRoadmap aims to provide a reliable structure for learning the fundamentals 
+                alongside cutting-edge tools.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
+      {/* Core Objectives */}
       <section className="py-12">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12">Our Values</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Project Objectives</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="glass-card p-8">
@@ -111,56 +87,45 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Project Scope / Future Scope */}
       <section className="py-12">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-4">Meet Our Team</h2>
-          <p className="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-            Passionate individuals dedicated to improving web development education
-          </p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="glass-card p-6 text-center">
-                <div className="relative mb-6">
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full blur-lg opacity-50" />
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="relative w-32 h-32 rounded-full object-cover border-4 border-white dark:border-gray-800 mx-auto"
-                  />
+          <div className="glass-card p-12 border-l-4 border-primary-500">
+             <div className="flex items-start">
+                <Globe className="h-8 w-8 text-primary-500 mt-1 mr-4 flex-shrink-0" />
+                <div>
+                   <h3 className="text-2xl font-bold mb-4">Future Scope</h3>
+                   <p className="text-gray-600 dark:text-gray-300">
+                     As web standards continue to evolve, this project aims to integrate 
+                     interactive coding environments and AI-driven curriculum adjustments. 
+                     The goal is to maintain a living document of the state of the web in 2026 and beyond.
+                   </p>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-3">{member.role}</p>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  {member.bio}
-                </p>
-              </div>
-            ))}
+             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Stats / Impact (Modified for Project Context) */}
       <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="glass-card p-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">10,000+</div>
-                <div className="text-gray-600 dark:text-gray-400">Active Learners</div>
+                <div className="text-4xl font-bold gradient-text mb-2">2026</div>
+                <div className="text-gray-600 dark:text-gray-400">Curriculum Year</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">500+</div>
-                <div className="text-gray-600 dark:text-gray-400">Learning Topics</div>
+                <div className="text-4xl font-bold gradient-text mb-2">15+</div>
+                <div className="text-gray-600 dark:text-gray-400">Tech Stacks Covered</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">98%</div>
-                <div className="text-gray-600 dark:text-gray-400">Satisfaction Rate</div>
+                <div className="text-4xl font-bold gradient-text mb-2">Open</div>
+                <div className="text-gray-600 dark:text-gray-400">Source Initiative</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">50+</div>
-                <div className="text-gray-600 dark:text-gray-400">Countries</div>
+                <div className="text-4xl font-bold gradient-text mb-2">∞</div>
+                <div className="text-gray-600 dark:text-gray-400">Learning Potential</div>
               </div>
             </div>
           </div>
