@@ -13,7 +13,7 @@ const ExploreCards = () => {
       icon: <FileCode className="h-12 w-12" />,
       path: '/html-notes',
       color: 'from-[#DC2626] to-[#F59E0B]',
-      topics: 24,
+      topics: 16,
       gradient: 'bg-gradient-to-br from-[#DC2626] to-[#F59E0B]'
     },
     {
@@ -22,7 +22,7 @@ const ExploreCards = () => {
       icon: <Palette className="h-12 w-12" />,
       path: '/css-notes',
       color: 'from-[#2563EB] to-[#0EA5E9]',
-      topics: 32,
+      topics: 9,
       gradient: 'bg-gradient-to-br from-[#2563EB] to-[#0EA5E9]'
     },
     {
@@ -31,7 +31,7 @@ const ExploreCards = () => {
       icon: <Code className="h-12 w-12" />,
       path: '/js-notes',
       color: 'from-[#16A34A] to-[#22C55E]',
-      topics: 45,
+      topics: 15,
       gradient: 'bg-gradient-to-br from-[#16A34A] to-[#22C55E]'
     }
   ]
